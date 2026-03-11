@@ -19,10 +19,11 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Restore NuGet packages
-      run: msbuild LogAnalyzerPlugin.csproj /t:Restore /p:Configuration=Release /p:Platform=x64
+      run: |
+        nuget restore LogAnalyzerPlugin.csproj -PackagesDirectory packages
 
     - name: Build plugin
-      run: msbuild LogAnalyzerPlugin.csproj /t:Build /p:Configuration=Release /p:Platform=x64 /v:minimal
+      run: msbuild LogAnalyzerPlugin.csproj /p:Configuration=Release /p:Platform=x64 /v:minimal
 
     - name: Upload DLL artifact
       uses: actions/upload-artifact@v4
