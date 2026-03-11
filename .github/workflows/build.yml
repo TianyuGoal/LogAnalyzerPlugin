@@ -23,7 +23,7 @@ jobs:
 
     - name: Install DllExport
       run: |
-        & "packages\DllExport.1.7.4\tools\net.r_eg.DllExport.Wizard.exe" -action Configure -sln-dir . -sln-file LogAnalyzerPlugin.csproj -metalib "packages\DllExport.1.7.4\gcache\metalib"
+        & ".\packages\DllExport.1.7.4\tools\net.r_eg.DllExport.Wizard.exe" -action Configure -sln-dir . -sln-file LogAnalyzerPlugin.csproj -metalib ".\packages\DllExport.1.7.4\gcache\metalib"
 
     - name: Build plugin
       run: msbuild LogAnalyzerPlugin.csproj /p:Configuration=Release /p:Platform=x64 /v:minimal
