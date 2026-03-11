@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup .NET Framework
       uses: microsoft/setup-msbuild@v1.1
@@ -25,7 +25,7 @@ jobs:
       run: msbuild LogAnalyzerPlugin.csproj /t:Build /p:Configuration=Release /p:Platform=x64 /v:minimal
 
     - name: Upload DLL artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: LogAnalyzerPlugin-DLL
         path: bin/Release/net48/LogAnalyzerPlugin.dll
