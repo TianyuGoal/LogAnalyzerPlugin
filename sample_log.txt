@@ -1,0 +1,30 @@
+2024-03-10 08:15:23.145 [INFO] Application started successfully
+2024-03-10 08:15:24.201 [INFO] Database connection established
+2024-03-10 08:15:25.334 [INFO] Loading configuration from config.xml
+2024-03-10 08:16:10.567 [WARN] High memory usage detected: 85%
+2024-03-10 08:16:45.789 [ERROR] Failed to connect to external API
+2024-03-10 08:16:45.790 [ERROR] Exception: System.Net.WebException: The remote server returned an error: (503) Service Unavailable
+2024-03-10 08:16:45.791 [ERROR] Stack trace: at System.Net.HttpWebRequest.GetResponse()
+2024-03-10 08:17:20.123 [INFO] Retrying API connection...
+2024-03-10 08:17:22.456 [ERROR] Connection timeout after 30 seconds
+2024-03-10 08:17:22.457 [ERROR] Exception: System.TimeoutException: The operation has timed out
+2024-03-10 08:18:05.678 [WARN] Switching to backup server
+2024-03-10 08:18:06.890 [INFO] Connected to backup server successfully
+2024-03-10 08:19:30.234 [INFO] Processing user request: user_id=12345
+2024-03-10 08:19:31.567 [INFO] Query executed in 1.2 seconds
+2024-03-10 08:20:15.890 [ERROR] Database query failed
+2024-03-10 08:20:15.891 [ERROR] Exception: System.Data.SqlException: Timeout expired
+2024-03-10 08:20:15.892 [WARN] Slow query detected: SELECT * FROM large_table
+2024-03-10 08:21:00.123 [INFO] User login: user_id=12345, username=john_doe
+2024-03-10 08:22:30.456 [INFO] User action: purchase, user_id=12345, amount=99.99
+2024-03-10 08:23:45.789 [ERROR] Payment gateway timeout
+2024-03-10 08:23:45.790 [ERROR] Exception: System.TimeoutException: Payment processing timed out
+2024-03-10 08:23:46.012 [WARN] Retrying payment...
+2024-03-10 08:24:10.345 [INFO] Payment successful: transaction_id=TXN789456
+2024-03-10 08:25:00.678 [INFO] User logout: user_id=12345
+2024-03-10 08:26:15.901 [ERROR] Unexpected error in background task
+2024-03-10 08:26:15.902 [ERROR] Exception: System.NullReferenceException: Object reference not set to an instance of an object
+2024-03-10 08:27:30.234 [INFO] Background task restarted
+2024-03-10 08:28:00.567 [INFO] System health check: OK
+2024-03-10 08:30:00.890 [INFO] Scheduled maintenance started
+2024-03-10 08:35:00.123 [INFO] Scheduled maintenance completed

@@ -1,0 +1,31 @@
+# Build outputs
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
